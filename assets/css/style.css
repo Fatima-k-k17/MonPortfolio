@@ -241,11 +241,12 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  padding: 0 15px;
 }
 
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 64px;
+  font-size: 56px;
   font-weight: 700;
   line-height: 56px;
   color: #fff;
@@ -265,9 +266,26 @@ h6 {
   border-bottom: 3px solid #149ddd;
 }
 
+@media (min-width: 1200px) {
+  #hero {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+  }
+}
+
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  #hero h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  #hero p {
+    font-size: 20px;
   }
 }
 
@@ -280,6 +298,16 @@ h6 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  #hero p {
+    font-size: 15px;
   }
 }
 
